@@ -1,0 +1,18 @@
+package aplication;
+
+import entities.Pistola;
+import service.JugadorService;
+import service.PistolaService;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pistola revolver = new Pistola();
+		PistolaService.llenarPistola();
+		System.out.println(PistolaService.mojar());
+		PistolaService.mostrar();
+		
+		System.out.println(JugadorService.disparo(revolver));
+	}
+
+}

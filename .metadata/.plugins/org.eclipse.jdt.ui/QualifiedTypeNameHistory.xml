@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="entities.ComparadorPeliculas"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="service.PaisService"/>
+    <fullyQualifiedTypeName name="service.JugadorService"/>
+    <fullyQualifiedTypeName name="entities.Jugador"/>
+    <fullyQualifiedTypeName name="service.PistolaService"/>
+    <fullyQualifiedTypeName name="service.JuegoService"/>
+</qualifiedTypeNameHistroy>

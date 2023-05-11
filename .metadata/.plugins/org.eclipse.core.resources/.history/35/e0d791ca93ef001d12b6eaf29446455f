@@ -1,0 +1,25 @@
+package service;
+
+import entities.Jugador;
+import entities.Pistola;
+
+public class JugadorService {
+	private static int id;
+	private static String nombre;
+	
+	public static boolean disparo(Pistola revolver) {
+		
+		boolean shot = PistolaService.mojar();
+		
+		if(shot == true) {
+		
+			return true;
+		}else {
+			PistolaService.siguienteChorro();
+			return false;
+		}
+		
+	}
+	
+	
+}

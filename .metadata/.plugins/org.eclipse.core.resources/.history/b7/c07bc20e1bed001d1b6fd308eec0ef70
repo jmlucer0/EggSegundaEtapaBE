@@ -1,0 +1,13 @@
+package aplication;
+
+import service.PaisService;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PaisService.ingresarPaises();
+		
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package entities;
+
+public class Pistola {
+
+	private Integer posisionActual;
+	private Integer posisionAgua;
+
+	public Pistola() {
+		super();
+	}
+
+	public Pistola(Integer posisionActual, Integer posisionAgua) {
+		super();
+		this.posisionActual = posisionActual;
+		this.posisionAgua = posisionAgua;
+	}
+
+	public Integer getPosisionActual() {
+		return posisionActual;
+	}
+
+	public void setPosisionActual(Integer posisionActual) {
+		this.posisionActual = posisionActual;
+	}
+
+	public Integer getPosisionAgua() {
+		return posisionAgua;
+	}
+
+	public void setPosisionAgua(Integer posisionAgua) {
+		this.posisionAgua = posisionAgua;
+	}
+
+	@Override
+	public String toString() {
+		return "Pistola [posisionActual=" + posisionActual + ", posisionAgua=" + posisionAgua + "]";
+	}
+
+}

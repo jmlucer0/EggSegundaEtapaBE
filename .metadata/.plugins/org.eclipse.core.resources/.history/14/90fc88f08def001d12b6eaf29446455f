@@ -1,0 +1,33 @@
+package service;
+
+import java.util.ArrayList;
+
+import entities.Jugador;
+import entities.Pistola;
+
+public class JuegoService {
+	
+	private static Jugador jugador = new Jugador();
+	
+	public static void llenarJuego(ArrayList<Jugador> jugadores, Pistola revolver) {
+		
+		for(int i = 0; i < 6; i++) {
+			jugador.setId(i);
+			jugador.setNombre("Jugador " + i+1);
+			jugadores.add(jugador);
+			
+		}
+		
+		PistolaService.llenarPistola();
+	}
+	
+	public static void ronda(ArrayList<Jugador> jugadores, Pistola revolver) {
+		boolean finJuego = false;
+		do {
+			for(Jugador ju: jugadores ) {
+				finJuego= ju.disparo();
+			}
+		}while(!finJuego);
+		
+	}
+}

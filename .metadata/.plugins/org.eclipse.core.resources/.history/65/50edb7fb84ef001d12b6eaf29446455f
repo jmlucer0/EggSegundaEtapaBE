@@ -1,0 +1,8 @@
+package service;
+
+public class PistolaService {
+
+	public void llenarPistola() {
+		
+	}
+}
