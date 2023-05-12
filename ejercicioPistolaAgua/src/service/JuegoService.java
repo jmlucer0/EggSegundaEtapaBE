@@ -13,7 +13,7 @@ public class JuegoService {
 		int contador = 0;
 		for(int i = 0; i < 6; i++) {
 			Jugador jugador1 = new Jugador();
-			jugador1.setId(i+contador);
+			jugador1.setId(i + 1);
 			jugador1.setMojado(false);
 			jugador1.setNombre("Jugador " + (i+1));
 			jugadores.add(jugador1);
@@ -28,12 +28,13 @@ public class JuegoService {
 		
 			for(Jugador ju: jugadores ) {
 				finJuego= JugadorService.disparo(ju, revolver);
-				if(ju.getMojado() == true ) {				
-					System.out.println("Fin del Juego");
+				System.out.println(ju.getNombre() + " " + ju.getMojado());
+				if(ju.getMojado() == true ) {
+					System.out.println(ju.getNombre() + " Fin del Juego");
 					finJuego=true;
 					break;
 				}else {
-					System.out.println("safaste");
+					System.out.println(ju.getNombre() + " safaste");
 				}
 				
 			}
